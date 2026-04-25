@@ -1,14 +1,104 @@
 /*vähennäkäyttöä-osion tyylittely*/
 
+.vahennakayttoa {
+  background-color: #e2ebf1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.jakaja {
+  height: 1px;
+  width: 100%;
+  background-color: #333333;
+}
+
+.kontsa {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1360px;
+  padding: 0 75px;
+  gap: 60px;
+}
+
+.vasen {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  width: 825px;
+}
+
+.otsikko {
+  font-family: 'Gotham Rounded:Bold', 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: black;
+  margin: 0;
+  line-height: normal;
+}
+
+.kuvaus {
+  font-family: '42dot_Sans:Medium', 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  line-height: 1.5;
+}
+
+.kuvaus .kursiivi {
+  font-family: 'Gotham Rounded:Medium_Italic', 'Montserrat', sans-serif;
+  font-style: italic;
+}
+
+.kuvaboksi {
+  background-color: #f2f5f7;
+  height: 370px;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.kuva {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  width: 825px;
+  height: 465px;
+  object-fit: cover;
+  max-width: none;
+  pointer-events: none;
+}
+
+.hyotylista {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  align-items: flex-start;
+  width: 460px;
+}
+
 .nappula {
   background-color: #0074bf;
-  border-radius: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  border-radius: 50px;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
   border: none;
   cursor: pointer;
   font-family: 'Gotham Rounded:Bold', 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 18px;
   color: white;
+  white-space: nowrap;
 }
 
 .nappula:hover {
