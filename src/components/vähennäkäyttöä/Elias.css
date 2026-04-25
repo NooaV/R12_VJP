@@ -1,0 +1,16 @@
+/*vähennäkäyttöä-osion tyylittely*/
+
+.nappula {
+  background-color: #0074bf;
+  border-radius: 52px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+  font-family: 'Gotham Rounded:Bold', 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.nappula:hover {
+  background-color: #005fa3;
+}
