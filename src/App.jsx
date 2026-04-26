@@ -1,18 +1,26 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 
-import Header from "./components/Header";
+import Header from "./components/navigation/Header";
+import Footer from "./components/navigation/Footer";
 
 
 function App() {
   return (
-    <>
+    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh"}}>
       <Header />
-      <p>Content Here</p>
-    </>
+
+      <main style ={{flex: 1}}>
+        <p>Kaikki sisältö tänne mainin sisään! App.jsx!</p>
+
+      </main>
+
+
+      <Footer />
+    </div>
+
+
+      
   );
 }
       

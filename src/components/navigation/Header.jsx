@@ -1,20 +1,22 @@
 import Navbar from "./Navbar";
 import "./Header.css"
-import HSL_logo from "../assets/HSL_logo.jpg";
+import HSL_logo from "../../assets/HSL_logo.jpg";
 
 
 function Header() {
     return (
         <header className ="header">
+            <div className="header-content">
             
-            <div className="logo">
-                <img src={HSL_logo} alt="HSL logo" className="logo-icon"/>
-            </div>
+                <div className="logo">
+                    <img src={HSL_logo} alt="HSL logo" className="logo-icon"/>
+                </div>
 
-            <Navbar />
+                <Navbar />
 
-            <div className="info">
-                <span>i{/*tähän info logo*/}</span>
+                <div className="info">
+                    <span>i{/*tähän info logo*/}</span>
+                </div>
             </div>
 
         </header>

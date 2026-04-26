@@ -1,0 +1,71 @@
+.footer {
+  background-color: #0074bf;
+  display: flex;
+  justify-content: center; /* Keskittää sisällön */
+  padding: 51px 0;         /* Poistetaan sivupadding täältä... */
+  width: 100vw;            /* Pakottaa leveyden koko näytön kokoiseksi */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1360px;       /* Sama leveys kuin Headerilla/Mainilla */
+  padding: 0 75px;         /* ...ja lisätään se tänne */
+  margin: 0 auto;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: flex-start;
+  width: 99px;
+}
+
+.footer-link {
+  font-family: 'Gotham Rounded:Bold', 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  opacity: 0.8;
+}
+
+.footer-description {
+  font-family: '42dot_Sans:Medium', 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  width: 664px;
+  margin: 0;
+  line-height: normal;
+}
+
+.footer-description .italic {
+  font-family: 'Gotham Rounded:Medium_Italic', 'Montserrat', sans-serif;
+  font-style: italic;
+}
+
+.footer-hsl-logo {
+  height: 58.632px;
+  width: 156.707px;
+  position: relative;
+}
+
+.footer-hsl-logo svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
