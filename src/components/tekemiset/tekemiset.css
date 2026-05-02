@@ -1,0 +1,87 @@
+
+.tekemiset-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 76px 75px;
+    width: 100%;
+}
+
+.tekemiset-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.tekemiset-main-title {
+    font-family: 'Gotham Rounded:Bold', 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: black;
+    margin: 0;
+    line-height: normal; 
+}
+
+.tekemiset-intro {
+    font-family: 'Gotham Rounded:Bold', 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    width: 750px;
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+.tekemiset-kortit {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    min-width: max-content;
+    padding-bottom: 4px;
+}
+
+.tekemiset-kortti {
+    background-color: #f2f5f7;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    width: 340px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.tekemiset-kuva {
+    position: absolute;
+    height: 201.42%;
+    left: 0;
+    top: -0.03%;
+    width: 100%;
+    max-width: none;
+}
+
+.tekemiset-desc {
+    position: absolute;
+    font-family: '42dot_Sans:Medium', 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+    left: 21px;
+    top: 355px;
+    width: 293px;
+    margin: 0;
+    line-height: normal;
+}
+
+.tekemiset-kortti-wrapper {
+    position: absolute;
+    height: 367px;
+    left: 0;
+    top: -92px;
+    width: 340px;
+    overflow: hidden;
+    pointer-events: none;
+}
