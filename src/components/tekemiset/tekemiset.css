@@ -1,10 +1,7 @@
-
 .tekemiset-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 76px 75px;
+    padding: 24px 0px;
     width: 100%;
 }
 
@@ -12,28 +9,38 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    align-items: flex-start;
     width: 100%;
+    align-items: flex-start;
 }
 
 .tekemiset-main-title {
-    font-family: 'Gotham Rounded:Bold', 'Montserrat', sans-serif;
+    font-family: 'Gotham Rounded', 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 32px;
     color: black;
     margin: 0;
-    line-height: normal; 
 }
 
 .tekemiset-intro {
-    font-family: 'Gotham Rounded:Bold', 'Montserrat', sans-serif;
+    font-family: 'Gotham Rounded', 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 18px;
     color: black;
     width: 750px;
     margin: 0;
-    white-space: pre-wrap;
+    justify-content: flex-start;
 }
+
+.intro-highlight {
+    color: #0074bf;
+    font-size: 20px;
+}
+
+.intro-text {
+    color: #333;
+    font-weight: 400;
+}
+
 
 .tekemiset-kortit {
     display: flex;
@@ -50,12 +57,9 @@
     border-radius: 10px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
     width: 340px;
-    flex-shrink: 0;
-    position: relative;
 }
 
 .tekemiset-kuva {
-    position: absolute;
     height: 201.42%;
     left: 0;
     top: -0.03%;
@@ -63,25 +67,40 @@
     max-width: none;
 }
 
-.tekemiset-desc {
-    position: absolute;
-    font-family: '42dot_Sans:Medium', 'Inter', sans-serif;
-    font-weight: 500;
+.tekemiset-title {
+    font-family: 'Gotham Rounded', 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: black;
+    padding: 10px 10px;
+    margin: 0;
+    line-height: normal;
+}
+
+.tekemiset-description {
+    font-family: 'Gotham Rounded', 'Montserrat', sans-serif;
+    font-weight: 700;
     font-size: 16px;
     color: #333;
-    left: 21px;
-    top: 355px;
     width: 293px;
+    margin: 0;
+    line-height: normal;
+    padding: 10px 10px;
+}
+
+.tekemiset-desc {
+    font-family: 'Gotham Rounded', 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
     margin: 0;
     line-height: normal;
 }
 
 .tekemiset-kortti-wrapper {
-    position: absolute;
-    height: 367px;
-    left: 0;
-    top: -92px;
-    width: 340px;
-    overflow: hidden;
-    pointer-events: none;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }

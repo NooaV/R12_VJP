@@ -22,30 +22,34 @@ export default function Tekemiset() {
             <div className="tekemiset-container">
                 <h2 className="tekemiset-main-title">Mitä teen matkani aikana ellen ole puhelimella?</h2>
                 <p className="tekemiset-desc">
-                    <span>
+                    <span className = "intro-text">
                         Oletko huomannut usein selaavasi puhelintasi metrossa, vaikket edes tahtoisi? Digikohina ja infoähky vie huomiomme ja keskittymiskykymme, mutta samalla sivuutamme myös arjen pienet hetket.
                     </span>
                     <br />
                     <br />
-                    <span className="tekemiset-intro">Olemme koostaneet sinulle vaihtoehtoista tekemistä: </span>
+                    <span className="intro-highlight">Olemme koostaneet sinulle vaihtoehtoista tekemistä: </span>
                 </p>
                 <div className="tekemiset-kortti-wrapper">
                     <div className="tekemiset-kortit">
                         <TekemisetKortti
                             title="Bingo"
                             description="Laske matkan aikana esineitä joita näet ikkunasta. Voit täyttää nämä bingopeliimme tai pitää mielessä."
+                            image = ""
                         />
                         <TekemisetKortti
                             title="Träkkeri"
                             description="Näytä muille miten olet matkustanut ilman ruutuaikaa, ja jaa tämä suoritus someen helposti."
+                            image = "/images/kännykkä.JPG"
                         />
                         <TekemisetKortti
                             title="Podi"
                             description="Podcast ruutuajan vähentämisen hyödyistä, innostu ja näytä itse esimerkkiä seuraavalla reissulla."
+                            image = "images/podi.jpg"
                         />
                         <TekemisetKortti
                             title="Meditaatio"
                             description="Ota kiireisestä arjesta toisenlainen hyödyllinen aika itsellesi meditaation kanssa. Lue lisää miten."
+                            image = ""
                         />
                     </div>
                 </div>
