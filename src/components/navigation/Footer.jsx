@@ -1,4 +1,4 @@
-import HSL_logo from "../..//assets/HSL_logo.jpg";
+import HSL_logo from "../../assets/photos/HSL_logo.jpg";
 import "./Footer.css"
 
 export default function Footer() {

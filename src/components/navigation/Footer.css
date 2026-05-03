@@ -1,9 +1,9 @@
 .footer {
   background-color: #0074bf;
   display: flex;
-  justify-content: center; /* Keskittää sisällön */
-  padding: 51px 0;         /* Poistetaan sivupadding täältä... */
-  width: 100vw;            /* Pakottaa leveyden koko näytön kokoiseksi */
+  justify-content: center; 
+  padding: 51px 0;         
+  width: 100vw;            
   position: relative;
   left: 50%;
   right: 50%;
@@ -16,8 +16,8 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1360px;       /* Sama leveys kuin Headerilla/Mainilla */
-  padding: 0 75px;         /* ...ja lisätään se tänne */
+  max-width: 1360px;      
+  padding: 0 75px;         
   margin: 0 auto;
 }
 
@@ -30,8 +30,8 @@
 }
 
 .footer-link {
-  font-family: 'Gotham Rounded:Bold', 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-family: 'Gotham Rounded', 'Inter', sans-serif;
+  font-weight: 500;
   font-size: 18px;
   color: white;
   text-decoration: none;
@@ -42,7 +42,7 @@
 }
 
 .footer-description {
-  font-family: '42dot_Sans:Medium', 'Inter', sans-serif;
+  font-family: 'Gotham Rounded', 'Inter', sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: white;
@@ -52,7 +52,8 @@
 }
 
 .footer-description .italic {
-  font-family: 'Gotham Rounded:Medium_Italic', 'Montserrat', sans-serif;
+  font-family: 'Gotham Rounded', sans-serif;
+  font-weight: 400;
   font-style: italic;
 }
 

@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import "./Header.css"
-import HSL_logo from "../../assets/HSL_logo.jpg";
+import HSL_logo from "../../assets/photos/HSL_logo.jpg";
 
 
 function Header() {
