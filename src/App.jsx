@@ -17,7 +17,6 @@ function App() {
  
     <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh"}}>
       <Header />
-      <Hero />
       <main style ={{flex: 1}}>
         <Routes>
           <Route path ="/" element={<Home />} />
