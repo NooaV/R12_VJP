@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import './hero.css';
 
@@ -27,11 +26,7 @@ const Hero = () => {
   );
 };
 
-export default Hero;
-=======
-import "./Hero.css";
 
 export default function Hero() {
   return <section className="hero"></section>;
 }
->>>>>>> 663d935087b54c966581c0be29dd5ddf67e1ed09
