@@ -1,5 +1,9 @@
 /*vähennäkäyttöä-osion tyylittely*/
 
+* {
+  box-sizing: border-box;
+}
+
 .vahennakayttoa {
   background-color: #e2ebf1;
   display: flex;
