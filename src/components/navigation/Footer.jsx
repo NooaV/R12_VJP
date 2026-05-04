@@ -1,4 +1,4 @@
-import HSL_logo from "../../assets/photos/HSL_logo.jpg";
+
 import "./Footer.css"
 
 export default function Footer() {
@@ -17,7 +17,7 @@ export default function Footer() {
           <span className="italic">Katse ylös </span>
           <span>kehottaa julkisen liikenteen matkustajia ottamaan enemmän irti arjesta. Vähentämällä ruutuaikaa, jää aikaa omille ajatuksille. Ajoita esimerkiksi päivittäinen työmatka omaksi ruuduttomaksi ajaksi. </span>
         </p>
-        <img src={HSL_logo} alt="HSL logo" className="logo-icon"/> 
+        <img src="/images/HSL_logo.jpg" alt="HSL logo" className="logo-icon"/> 
       </div>
     </footer>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import './hero.css';
 
+
 const Hero = () => {
   return (
     <section className="hero-container">
@@ -10,7 +11,7 @@ const Hero = () => {
 
       <div 
         className="hero-foreground"
-        style={{ backgroundImage: `url(${'src/assets/photos/hero_osio.png'})` }}
+        style={{ backgroundImage: "url('/images/hero_osio.png')" }}
       ></div>
 
       <div className="hero-content">

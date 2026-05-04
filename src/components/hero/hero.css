@@ -20,7 +20,7 @@
 }
 
 .static-underlay-container {
-  position: center;
+  position: absolute;
   bottom: 0%; 
   left: 40%;
   width: 25%; 
@@ -35,7 +35,7 @@
   left: -50%;
   width: 200%;
   height: 300%;
-  background-image: url(src/assets/photos/lumisade.png);
+  background-image: url("/images/lumisade.png");
   filter: contrast(350%) brightness(150%) grayscale(100%);
   animation: staticLoop 0.15s steps(2) infinite;
 }
@@ -111,21 +111,23 @@
   }
 }
 
+.static-underlay-container {
+  /* lumisade */
+  animation: fadeInFromBlack 3s ease-in 1 forwards;
+  opacity: 0;
+  z-index: 1;
+}
+
 .hero-foreground {
   /* Kuva */
-  animation: fadeInFromBlack 5s ease-out 0s forwards;
+  animation: fadeInFromBlack 1s ease-out 0s forwards;
   opacity: 0;
+  z-index: 2;
 }
 
 .hero-content {
   /* Teksti */
   animation: fadeInFromBlack 5s ease-out 3.0s forwards;
   opacity: 0; /* Alussa piilossa */
-}
-
-
-.static-underlay-container {
-  /* lumisade */
-  animation: fadeInFromBlack 7s ease-in 0.5s forwards;
-  opacity: 0;
+  z-index: 3;
 }
