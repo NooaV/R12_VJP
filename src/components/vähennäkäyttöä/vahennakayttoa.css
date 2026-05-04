@@ -35,7 +35,7 @@
 }
 
 .otsikko {
-  font-family: 'Gotham Rounded:Bold', 'Montserrat', sans-serif;
+  font-family: 'Gotham Rounded', 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 32px;
   color: black;
@@ -44,7 +44,7 @@
 }
 
 .kuvaus {
-  font-family: '42dot_Sans:Medium', 'Inter', sans-serif;
+  font-family: '42dot_Sans', 'Inter', sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: black;
@@ -52,7 +52,7 @@
 }
 
 .kuvaus .kursiivi {
-  font-family: 'Gotham Rounded:Medium_Italic', 'Montserrat', sans-serif;
+  font-family: 'Gotham Rounded', 'Montserrat', sans-serif;
   font-style: italic;
 }
 
@@ -94,7 +94,7 @@
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
   border: none;
   cursor: pointer;
-  font-family: 'Gotham Rounded:Bold', 'Montserrat', sans-serif;
+  font-family: 'Gotham Rounded', 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: white;
@@ -103,4 +103,35 @@
 
 .nappula:hover {
   background-color: #005fa3;
+}
+
+.hyotykortti {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  background-color: #f2f5f7;
+  height: 113px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+.hyotyteksti {
+  font-family: '42dot_Sans', 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  left: 30px;
+  top: 48px;
+  margin: 0;
+}
+
+.ikoni {
+  height: 68px;
+  width: 68px;
+  left: 340px;
+  top: 23px;
+  overflow: hidden;
 }

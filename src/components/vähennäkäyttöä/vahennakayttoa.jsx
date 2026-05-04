@@ -1,10 +1,10 @@
 //vähennäkäyttöä-osion koodi
 
-import picture from //kuvan sijainti, heti ku joku lataa ne tänne projektiin;
-import "./Elias.css";
+import "./vahennakayttoa.css";
 
 
-export default function ReduceUsageSection() {
+
+export default function Vahennakayttoa() {
   return (
     <section className="vahennakayttoa">
       <div className="jakaja"></div>
@@ -17,7 +17,7 @@ export default function ReduceUsageSection() {
             <span>kehottaa julkisen liikenteen matkustajia ottamaan enemmän irti arjesta. Vähentämällä ruutuaikaa, jää aikaa omille ajatuksille. Ajoita esimerkiksi päivittäinen työmatka omaksi ruuduttomaksi ajaksi. </span>
           </p>
           <div className="kuvaboksi">
-            <img src={picture} alt="" className="kuva" />
+            <img src="images/kuva1.jpeg" alt="kuvituskuva" className="kuva" />
           </div>
         </div>
         <div className="hyotylista">
@@ -33,8 +33,13 @@ export default function ReduceUsageSection() {
 }
 
 
-function Hyoty() {
+function Hyoty({numero}) {
   return (
-    //tee jokaiseta kolmesta hyödystä oma "kortti", joita saa tehtyy helposti niin monta ku tarvii, numero identifioi tietyn kprtin
+    <div className="hyotykortti">
+      <p className="hyotyteksti">Hyöty {numero}</p>
+      <div className="ikoni">
+        <img src="assets/photos/tahti_icon.png" alt="tähti-ikoni"/>
+      </div>
+    </div>
   );
 }
