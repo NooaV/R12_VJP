@@ -103,10 +103,17 @@
   font-size: 18px;
   color: white;
   white-space: nowrap;
+  transition: all 0.3s ease;
 }
 
 .nappula:hover {
   background-color: #005fa3;
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 12px #005d9f;
+}
+
+.nappula:active {
+  transform: translateY(0); 
 }
 
 .hyotykortti {
@@ -137,7 +144,6 @@
   width: 68px;
   left: 340px;
   top: 23px;
-  overflow: hidden;
 }
 
 

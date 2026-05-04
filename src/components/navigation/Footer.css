@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1360px;      
+  max-width: 3360px;      
   padding: 0 75px;         
   margin: 0 auto;
 }
@@ -27,6 +27,7 @@
   gap: 26px;
   align-items: flex-start;
   width: 99px;
+  padding: 0, 20px;
 }
 
 .footer-link {
@@ -47,7 +48,8 @@
   font-size: 16px;
   color: white;
   width: 664px;
-  margin: 0;
+  padding: 0, 20px;
+  margin: 0 20px;
   line-height: normal;
 }
 

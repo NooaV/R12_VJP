@@ -10,6 +10,7 @@ function Navbar() {
 
             <a href="#">Träkkeri</a>
             <a href="#">Meditaatio</a>
+            <a href="#">Podcast</a>
         </nav>
     );
 }

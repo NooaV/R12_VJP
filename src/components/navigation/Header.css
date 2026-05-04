@@ -2,7 +2,7 @@
 .header {
     font-family: 'Gotham Rounded:Bold', 'Inter', sans-serif;
     background-color: #0074BF;
-    width: 100vw;            
+    width: 100%;            
     display: flex;
     justify-content: center; 
     
@@ -19,8 +19,8 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1360px;      
-    padding: 15px 75px; 
+    max-width: 3660px;      
+    padding: 15px 35px; 
 }
 
 .logo{
@@ -29,7 +29,7 @@
 
 .nav {
     display: flex;
-    gap: 30px;
+    gap: clamp(30px, 4vw, 200px);
 }
 
 .nav a{

@@ -1,7 +1,7 @@
 .tekemiset-section {
     display: flex;
     flex-direction: column;
-    padding: 24px 0px;
+    padding: 0 clamp(16px, 5vw, 80px);
     width: 100%;
 }
 
@@ -11,6 +11,8 @@
     gap: 25px;
     width: 100%;
     align-items: flex-start;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .tekemiset-main-title {
@@ -19,6 +21,7 @@
     font-size: 32px;
     color: black;
     margin: 0;
+    padding-top: 10px;
 }
 
 .tekemiset-intro {
@@ -47,7 +50,7 @@
     gap: 35px;
     align-items: center;
     min-width: max-content;
-    padding-bottom: 4px;
+    padding-bottom: 20px;
 }
 
 .tekemiset-kortti {

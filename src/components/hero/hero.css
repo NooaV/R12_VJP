@@ -1,7 +1,7 @@
 
 .hero-container {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   background-color: #000;
@@ -20,7 +20,7 @@
 }
 
 .static-underlay-container {
-  position: absolute;
+  position: center;
   bottom: 0%; 
   left: 40%;
   width: 25%; 
@@ -100,4 +100,32 @@
     background-position: center;
     background-repeat: no-repeat;
     }
+}
+
+@keyframes fadeInFromBlack {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero-foreground {
+  /* Kuva */
+  animation: fadeInFromBlack 5s ease-out 0s forwards;
+  opacity: 0;
+}
+
+.hero-content {
+  /* Teksti */
+  animation: fadeInFromBlack 5s ease-out 3.0s forwards;
+  opacity: 0; /* Alussa piilossa */
+}
+
+
+.static-underlay-container {
+  /* lumisade */
+  animation: fadeInFromBlack 7s ease-in 0.5s forwards;
+  opacity: 0;
 }

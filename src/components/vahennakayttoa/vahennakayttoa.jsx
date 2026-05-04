@@ -4,6 +4,7 @@ import "./vahennakayttoa.css";
 
 
 
+
 export default function Vahennakayttoa() {
   return (
     <section className="vahennakayttoa">
@@ -21,9 +22,9 @@ export default function Vahennakayttoa() {
           </div>
         </div>
         <div className="hyotylista">
-          <Hyoty numero={1} />
-          <Hyoty numero={2} />
-          <Hyoty numero={3} />
+          <Hyoty teksti={"Parempi unen laatu ja nukahtamisnopeus"} />
+          <Hyoty teksti={"Mielialan tasaantuminen ja stressin väheneminen"} />
+          <Hyoty teksti={'Keskittymiskyvyn ja "syvän työn" palautuminen'} />
           <button className="nappula">Lue lisää hyödyistä</button>
         </div>
       </div>
@@ -33,12 +34,12 @@ export default function Vahennakayttoa() {
 }
 
 
-function Hyoty({numero}) {
+function Hyoty({teksti}) {
   return (
     <div className="hyotykortti">
-      <p className="hyotyteksti">Hyöty {numero}</p>
+      <p className="hyotyteksti">{teksti}</p>
       <div className="ikoni">
-        <img src="assets/photos/tahti_icon.png" alt="tähti-ikoni"/>
+        <img src="images/tahti_icon.png" alt="tähti-ikoni"/>
       </div>
     </div>
   );
