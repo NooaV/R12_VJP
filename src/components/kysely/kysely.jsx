@@ -20,6 +20,7 @@ const Kysely = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [vastaukset, setVastaukset] = useState([]);
     const [showTulos, setShowTulos] = useState(false);
+    const [aloitus, setAloitus] = useState(true);
 
     const handleVastaus = (vastaus) => {
         const uudetVastaukset = [...vastaukset];
@@ -43,6 +44,13 @@ const Kysely = () => {
         setCurrentIndex(0);
         setVastaukset([]);
         setShowTulos(false);
+        setAloitus(true);
+    };
+
+    const aloita = () => {
+        if (aloitus === false) {
+            setAloitus(false);
+        }
     };
 
     const yesCount = vastaukset.filter(a => a === 'y').length;
@@ -64,6 +72,15 @@ const Kysely = () => {
 
     const valmisProsentti = ((currentIndex + 1 ) / kysymykset.length) * 100;
 
+    if (aloitus) {
+        return (
+            <div className="kysely-cont kysely-menu">
+                <h1>Onko puhelimen käyttö sinulle ongelma?</h1>
+                <button className="kysymys-nappi" onClick={aloita}>Aloita testi</button>
+            </div>
+        );
+    };
+
     if (showTulos) {
         return (
             <div className="kysely-cont tulos-cont">
@@ -78,6 +95,45 @@ const Kysely = () => {
 
                 <button className="kysely-nappi" onClick={alusta}>Tee testi uudestaan</button>
             </div>
-        )
+        );
     };
+
+    return (
+        <div className="kysely-cont">
+            {/*Edistyminen*/}
+            <div className="edistys-tausta">
+                <div
+                    className="edistys-palkki"
+                    style={{ width: '${valmisProsentti}%' }}
+                ></div>
+            </div>
+
+            {/*Kysymys*/}
+            <h1 className="kysymys">{kysymykset[currentIndex].text}</h1>
+
+            {/*Vastaus napit*/}
+            <div className="vaihtoehdot">
+                <button className="kysymys-nappi" onClick={() => handleVastaus('y')}>
+                    Kyllä
+                </button>
+                <button className="kysymys-nappi" onClick={() => handleVastaus('n')}>
+                    Ei
+                </button>
+            </div>
+
+            {/*Edellinen*/}
+            <div className="kysely-ala-osa">
+                {currentIndex > 0 ? (
+                    <button className="edellinen" onClick={handleEdellinen}>
+                        Edellinen
+                    </button>
+                ) : (
+                    <div style= {{ height: '24px' }}></div>
+                )}
+                    
+            </div>
+        </div>
+    );
 };
+
+export default Kysely;
