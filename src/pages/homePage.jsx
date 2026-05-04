@@ -2,7 +2,7 @@
 
 import Tekemiset from "../components/tekemiset/tekemiset";
 import Hero from "../components/hero/hero";
-import Vahennakayttoa from "../components/vähennäkäyttöä/vahennakayttoa";
+import Vahennakayttoa from "../components/vahennakayttoa/vahennakayttoa";
 
 
 function Home() {
