@@ -34,12 +34,12 @@ export default function Tekemiset() {
                         <TekemisetKortti
                             title="Bingo"
                             description="Laske matkan aikana esineitä joita näet ikkunasta. Voit täyttää nämä bingopeliimme tai pitää mielessä."
-                            image = ""
+                            image = "images/maisema.jpeg"
                         />
                         <TekemisetKortti
                             title="Träkkeri"
                             description="Näytä muille miten olet matkustanut ilman ruutuaikaa, ja jaa tämä suoritus someen helposti."
-                            image = "/images/kännykkä.JPG"
+                            image = "images/puhelin.jpeg"
                         />
                         <TekemisetKortti
                             title="Podi"
@@ -49,7 +49,7 @@ export default function Tekemiset() {
                         <TekemisetKortti
                             title="Meditaatio"
                             description="Ota kiireisestä arjesta toisenlainen hyödyllinen aika itsellesi meditaation kanssa. Lue lisää miten."
-                            image = ""
+                            image = "images/meditaatio.jpeg"
                         />
                     </div>
                 </div>
