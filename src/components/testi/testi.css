@@ -1,0 +1,66 @@
+.testi-section {
+  background-color: #0074bf;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  align-items: flex-start;
+  padding: 0 75px;
+  width: 100%;
+}
+
+.testi-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  gap: 31px;
+  height: 161px;
+  width: 100%;
+  max-width: 1363px;
+}
+
+.testi-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  width: 756px;
+}
+
+.testi-title {
+  font-family: 'Gotham Rounded', 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: white;
+  margin: 0;
+  line-height: normal;
+}
+
+.testi-description {
+  font-family: 'Gotham Rounded', 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  margin: 0;
+  line-height: normal;
+}
+
+.testi-button {
+  background-color: #f2f5f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 26px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+  font-family: 'Gotham Rounded', 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  white-space: nowrap;
+}
+
+.testi-button:hover {
+  background-color: #e0e3e5;
+}
