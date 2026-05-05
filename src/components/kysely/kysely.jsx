@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './kysely.css';
 import { use } from 'react';
 
 const kysymykset = [
     {id: 1, text: "Päädyitkö tälle sivulle satunnaisen selailun kautta?" },
-    {id: 2, text: "Otatko puhelimen käteen sänkyyn mentyäsi useammin kuin 4 kertaa viikossa?" },
+    {id: 2, text: "Selaatko puhelinta usein jo sänkyyn mentyäsi?" },
     {id: 3, text: "Onko puhelimen käyttö ensimmäinen asia, mitä aamulla teet?" },
-    {id: 4, text: "Oletko yrittänyt vähentää puhelimen käyttöä ja huomannut epäonnistuvasi?" },
+    {id: 4, text: "Oletko yrittänyt vähentää ruutuaikaa, mutta epäonnistunut?" },
     {id: 5, text: "Oletko huomannut tänään selaavasi kännykkää turhaan?" },
     {id: 6, text: "Oletko saanut palautetta liiasta kännykänkäytöstä?" },
-    {id: 7, text: "Koetko, että työntekosi tehokkuus tai tahti on heikennyt puhelimen käytön seurauksena?" },
-    {id: 8, text: "Huomaatko kokevasi stressiä tai ahdistusta, kun puhelimesi ei ole lähelläsi?" },
-    {id: 9, text: "Tunnetko haamuvärinöitä (tunnet ilmoitusten tuntopalautteen vaikkei ilmoitusta tule)?" },
-    {id: 10, text: "Oletko koskaan jättänyt nousemasta oikealla pysäkillä puhelimen käytön takia" },
+    {id: 7, text: "Koetko, että työntekosi heikentyy selailun seurauksena?" },
+    {id: 8, text: "Menetätkö usein ajantajun selailun takia?" },
+    {id: 9, text: "Tunnetko koskaan saavasi ilmoituksen, vaikket ole saanut?" },
+    {id: 10, text: "Onko sinulta jäänyt julkisissa oikea pysäkki väliin selailun takia?" },
     {id: 11, text: "Aiotko katsoa ylös?" },
 ];
 
@@ -21,6 +21,7 @@ const Kysely = () => {
     const [vastaukset, setVastaukset] = useState([]);
     const [showTulos, setShowTulos] = useState(false);
     const [aloitus, setAloitus] = useState(true);
+    const [animoitu, setAnimoitu] = useState(0);
 
     const handleVastaus = (vastaus) => {
         const uudetVastaukset = [...vastaukset];
@@ -65,6 +66,26 @@ const Kysely = () => {
 
     const tulosProsentti = Math.round((noCount / kysymykset.length) * 100);
 
+    useEffect(() => {
+        if (showTulos){
+            let init = 0;
+            const kesto = 1000;
+            const incr = tulosProsentti / (kesto / 10);
+
+            const ajastin = setInterval(() => {
+                init += incr;
+                if (init >= tulosProsentti) {
+                    setAnimoitu(tulosProsentti);
+                    clearInterval(ajastin);
+                } else {
+                    setAnimoitu(Math.floor(init));
+                }
+            }, 10);
+        } else {
+            setAnimoitu(0);
+        }
+    }, [showTulos, tulosProsentti]);
+
     const getTulosViesti = (score) => {
         if (score <= 2) {
             return "Sinun on hyödyllistä tarkastella puhelimen käyttöäsi huolella.";
@@ -95,7 +116,7 @@ const Kysely = () => {
             <div className="kysely-cont tulos-cont">
                 <h2>Tulokset</h2>
                 <div className="tulos">
-                    {tulosProsentti} %
+                    {animoitu} %
                 </div>
 
                 <div className="tulos-viesti">
