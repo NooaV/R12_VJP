@@ -13,7 +13,7 @@ const kysymykset = [
     {id: 8, text: "Huomaatko kokevasi stressiä tai ahdistusta, kun puhelimesi ei ole lähelläsi?" },
     {id: 9, text: "Tunnetko haamuvärinöitä (tunnet ilmoitusten tuntopalautteen vaikkei ilmoitusta tule)?" },
     {id: 10, text: "Oletko koskaan jättänyt nousemasta oikealla pysäkillä puhelimen käytön takia" },
-    {id: 11, text: "Tämän testin tehtyäsi, aiotko jättää turhan selaamisen väliin edes kerran?" },
+    {id: 11, text: "Aiotko katsoa ylös?" },
 ];
 
 const Kysely = () => {
@@ -26,6 +26,15 @@ const Kysely = () => {
         const uudetVastaukset = [...vastaukset];
         uudetVastaukset[currentIndex] = vastaus;
         setVastaukset(uudetVastaukset);
+
+        if (currentIndex === 10) {
+            if (vastaus === 'n') {
+                uudetVastaukset[currentIndex] = 'y'
+            }
+            if (vastaus === 'y') {
+                uudetVastaukset[currentIndex] = 'n'
+            }
+        }
 
         if (currentIndex < kysymykset.length - 1) {
             setCurrentIndex(currentIndex + 1);
@@ -72,9 +81,11 @@ const Kysely = () => {
 
     if (aloitus) {
         return (
-            <div className="kysely-cont kysely-menu">
-                <h1>Onko puhelimen käyttö sinulle ongelma?</h1>
-                <button className="kysymys-nappi" onClick={aloita}>Aloita testi</button>
+            <div className="kysely-cont">
+                <div className="aloitus-menu">
+                    <h1>Onko puhelimen käyttö sinulle ongelma?</h1>
+                    <button className="kysymys-nappi" onClick={aloita}>Aloita testi</button>
+                </div>
             </div>
         );
     };
@@ -84,7 +95,7 @@ const Kysely = () => {
             <div className="kysely-cont tulos-cont">
                 <h2>Tulokset</h2>
                 <div className="tulos">
-                    {tulosProsentti}%
+                    {tulosProsentti} %
                 </div>
 
                 <div className="tulos-viesti">
@@ -102,7 +113,7 @@ const Kysely = () => {
             <div className="edistys-tausta">
                 <div
                     className="edistys-palkki"
-                    style={{ width: '${valmisProsentti}%' }}
+                    style={{ width: valmisProsentti + '%' }}
                 ></div>
             </div>
 
