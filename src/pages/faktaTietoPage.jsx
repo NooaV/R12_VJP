@@ -5,7 +5,7 @@ export default function FaktaPage() {
     <>
       <FaktaTieto
         title="Mikä on Doomscrollaaminen?"
-        src="/images/doomscroll.jpg"
+        src="/images/puhelin.jpeg"
         imgPos="right"
         content={
           <>
@@ -17,7 +17,7 @@ export default function FaktaPage() {
 
       <FaktaTieto
         title="Vaikutus uneen ja keskittymiseen"
-        src="/images/doomscroll.jpg"
+        src="/images/meditaatio.jpeg"
         imgPos="left"
         content={
           <>
@@ -28,7 +28,7 @@ export default function FaktaPage() {
 
       <FaktaTieto
         title="Scrollaamisen vähentämisen hyödyt"
-        src="/images/doomscroll.jpg"
+        src="/images/maisema.jpeg"
         imgPos="right"
         content={
           <>
