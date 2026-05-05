@@ -4,7 +4,7 @@ export default function FaktaPage() {
   return (
     <>
       <FaktaTieto
-        title="Mikä on Doomscrollaaminen?"
+        title="Mitä on Doomscrollaaminen?"
         src="/images/puhelin.jpeg"
         imgPos="right"
         content={

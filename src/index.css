@@ -27,7 +27,14 @@
 }
 
 body {
-  margin: 0; /* TÄRKEÄ: Poistaa ne valkoiset raot reunoilta */
+  margin: 0;
+  width: 100%;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 #root {
