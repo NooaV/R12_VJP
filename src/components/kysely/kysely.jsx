@@ -48,9 +48,7 @@ const Kysely = () => {
     };
 
     const aloita = () => {
-        if (aloitus === false) {
-            setAloitus(false);
-        }
+        setAloitus(false);
     };
 
     const yesCount = vastaukset.filter(a => a === 'y').length;
@@ -90,7 +88,7 @@ const Kysely = () => {
                 </div>
 
                 <div className="tulos-viesti">
-                    {getTulosViesti(yesCount)}
+                    {getTulosViesti(noCount)}
                 </div>
 
                 <button className="kysely-nappi" onClick={alusta}>Tee testi uudestaan</button>

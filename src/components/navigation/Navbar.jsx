@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
     return (
         <nav className ="nav">
-            <a href="#">Pelit</a>
-
+            <Link to="/kysely">Pelit</Link>
             <Link to="/faktatieto">Faktatieto</Link>
 
             <a href="#">Träkkeri</a>
