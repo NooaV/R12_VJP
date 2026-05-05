@@ -8,6 +8,7 @@ import Hero from "./components/hero/hero";
 
 import Home from "./pages/homePage";
 import FaktaTieto from "./pages/faktaTietoPage";
+import Quiz from "./pages/kyselyPage";
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -21,7 +22,7 @@ function App() {
         <Routes>
           <Route path ="/" element={<Home />} />
           <Route path ="/faktatieto" element={<FaktaTieto/>} />
-
+          <Route path ="/kysely" element={<Quiz/>} />
         </Routes>
       </main>
 
