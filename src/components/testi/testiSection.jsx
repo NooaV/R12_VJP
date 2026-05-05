@@ -1,4 +1,5 @@
 import "./testi.css";
+import { Link } from "react-router-dom";
 
 export default function TestiSection() {
   return (
@@ -10,7 +11,7 @@ export default function TestiSection() {
           <p className="testi-description">
             Doomscrollaaminen on ajatona scrollaamista puhelimella, varsinkin kun ei ole etsimässä mitään hyödyllistä vaan haluaa pelkästään viettää aikaa.
           </p>
-          <button className="testi-button">Tee nopea testi!</button>
+          <Link to="/kysely" className="testi-button">Tee nopea testi!</Link>
         </div>
       </div>
       <div className="section-divider"></div>

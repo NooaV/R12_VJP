@@ -54,7 +54,7 @@ const Kysely = () => {
     const yesCount = vastaukset.filter(a => a === 'y').length;
     const noCount = vastaukset.filter(a => a === 'n').length;
 
-    const tulosProsentti = (noCount / kysymykset.length) * 100;
+    const tulosProsentti = Math.round((noCount / kysymykset.length) * 100);
 
     const getTulosViesti = (score) => {
         if (score <= 2) {
@@ -84,7 +84,7 @@ const Kysely = () => {
             <div className="kysely-cont tulos-cont">
                 <h2>Tulokset</h2>
                 <div className="tulos">
-                    {tulosProsentti}
+                    {tulosProsentti}%
                 </div>
 
                 <div className="tulos-viesti">
