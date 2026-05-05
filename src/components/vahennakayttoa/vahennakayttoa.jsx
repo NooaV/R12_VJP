@@ -1,5 +1,5 @@
 //vähennäkäyttöä-osion koodi
-
+import { Link } from "react-router-dom";
 import "./vahennakayttoa.css";
 
 
@@ -25,7 +25,7 @@ export default function Vahennakayttoa() {
           <Hyoty teksti={"Parempi unen laatu ja nukahtamisnopeus"} />
           <Hyoty teksti={"Mielialan tasaantuminen ja stressin väheneminen"} />
           <Hyoty teksti={'Keskittymiskyvyn ja "syvän työn" palautuminen'} />
-          <button className="nappula">Lue lisää hyödyistä</button>
+          <Link to="/faktatieto" className="nappula">Lue lisää hyödyistä</Link>
         </div>
       </div>
       <div className="jakaja"></div>
