@@ -16,7 +16,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* Tumma teema pidetään myös */
+/* Tummaa teema ei käytössä. */
 /* @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
