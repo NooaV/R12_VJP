@@ -4,6 +4,7 @@ import Tekemiset from "../components/tekemiset/tekemiset";
 import Hero from "../components/hero/hero";
 import Vahennakayttoa from "../components/vahennakayttoa/vahennakayttoa";
 import TestiSection from "../components/testi/testiSection";
+import OpetellaanYhdessa from "../components/Opetellaan yhdessa/opetellaan";
 
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
       <Vahennakayttoa />
       <TestiSection />
       <Tekemiset />
+      <OpetellaanYhdessa />
 
     </>
   );
