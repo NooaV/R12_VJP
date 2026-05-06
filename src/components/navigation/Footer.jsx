@@ -1,13 +1,15 @@
 
 import "./Footer.css"
+import { Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
         <nav className="footer-nav">
-          <a href="#pelit" className="footer-link">Pelit</a>
-          <a href="#faktatieto" className="footer-link">Faktatieto</a>
+          <Link to="/kysely">Pelit</Link>
+          <Link to="/faktatieto">Tietoa</Link>
           <a href="#trakkeri" className="footer-link">Träkkeri</a>
           <a href="#podcast" className="footer-link">Podcast</a>
           <a href="#meditaatio" className="footer-link">Meditaatio</a>
