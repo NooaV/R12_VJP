@@ -6,9 +6,10 @@
   flex-direction: column;
   gap: 31px;
   align-items: flex-start;
-  padding: 40px 75px; /* Lisäsin pystysuuntaista paddingia */
+  padding: 20px 75px; /* Lisäsin pystysuuntaista paddingia */
   width: 100%;
   box-sizing: border-box; /* TÄRKEÄ: padding ei kasvata kokonaisleveyttä */
+  border-bottom: 1px solid black;
 }
 
 .testi-content {
@@ -67,6 +68,7 @@
   color: white;
   margin: 0;
   line-height: normal;
+  padding: 10px 0px;
 }
 
 .testi-description {
@@ -76,7 +78,7 @@
   color: white;
   margin: 0;
   line-height: normal;
-  
+  width: 50vw;
 }
 
 .testi-button {
@@ -96,6 +98,7 @@
   white-space: nowrap;
   margin-top: 20px;
   text-decoration: none;
+  width: 20vh
 }
 
 .testi-button:hover {
