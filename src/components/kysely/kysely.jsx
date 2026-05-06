@@ -13,8 +13,14 @@ const kysymykset = [
     {id: 8, text: "Menetätkö usein ajantajun selailun takia?" },
     {id: 9, text: "Tunnetko koskaan saavasi ilmoituksen, vaikket ole saanut?" },
     {id: 10, text: "Onko sinulta jäänyt oikea pysäkki väliin selailun takia?" },
-    {id: 11, text: "Aiotko katsoa ylös?" },
+    {id: 11, text: "Koetko halua/tarvetta parantaa puhelimen hallintaasi?" },
+    {id: 12, text: "Huomaatko usein tarkistavasi ilmoituksesi?" },
+    {id: 13, text: "Käytätkö puhelinta viihteeseen yli 3 tuntia päivässä?" },
+    {id: 14, text: "Mietitkö usein omaa puhelimen käyttöäsi?" },
+    {id: 15, text: "Aiotko katsoa ylös?" },
 ];
+
+const posVastaukset = [11, 14, 15];
 
 const Kysely = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,7 +34,7 @@ const Kysely = () => {
         uudetVastaukset[currentIndex] = vastaus;
         setVastaukset(uudetVastaukset);
 
-        if (currentIndex === 10) {
+        if (posVastaukset.includes(currentIndex + 1)) {
             if (vastaus === 'n') {
                 uudetVastaukset[currentIndex] = 'y'
             }
@@ -87,18 +93,18 @@ const Kysely = () => {
     }, [showTulos, tulosProsentti]);
 
     const getTulosViesti = (score) => {
-        if (score <= 2) {
+        if (score <= 5) {
             return "Sinun on hyödyllistä tarkastella puhelimen käyttöäsi huolella.";
-        } else if (score <= 5) {
+        } else if (score <= 10) {
             return "Sinulla on taipumusta liialiseen selailuun, mutta muutos on helposti tehtävissä!";
-        } else if (score <= 8) {
-            return "Sinä olet jo hyvin lähellä ihanteellisia puhelinkäytäntöjä!";
+        } else if (score <= 13) {
+            return "Sinä olet jo lähellä ihanteellisia puhelinkäytäntöjä! Enää pienellä panostuksella voit saada aikaan mahtavia tuloksia!";
         } else {
             return "Vau! Selkeästi osaat irrottautua puhelimestasi! Nauti matkastasi, sekä oikeasta maailmasta!";
         }
     };
 
-    const valmisProsentti = ((currentIndex + 1 ) / kysymykset.length) * 100;
+    const valmisProsentti = ((currentIndex) / kysymykset.length) * 100;
 
     if (aloitus) {
         return (
@@ -116,14 +122,14 @@ const Kysely = () => {
             <div className="kysely-cont tulos-cont">
                 <h2>Tulokset</h2>
                 <div className="tulos">
-                    Hallitset puhelimen käyttöäsi tasolla {animoitu} %
+                    Hallitset puhelimen käyttöäsi tasolla {animoitu}%
                 </div>
 
                 <div className="tulos-viesti">
                     {getTulosViesti(noCount)}
                 </div>
 
-                <button className="kysely-nappi" onClick={alusta}>Tee testi uudestaan</button>
+                <button className="edellinen" onClick={alusta}>Tee testi uudestaan</button>
             </div>
         );
     };
