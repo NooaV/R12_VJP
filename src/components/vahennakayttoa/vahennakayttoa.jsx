@@ -22,9 +22,9 @@ export default function Vahennakayttoa() {
           </div>
         </div>
         <div className="hyotylista">
-          <Hyoty teksti={"Parempi unen laatu ja nukahtamisnopeus"} />
-          <Hyoty teksti={"Mielialan tasaantuminen ja stressin väheneminen"} />
-          <Hyoty teksti={'Keskittymiskyvyn ja "syvän työn" palautuminen'} />
+          <Hyoty teksti={"Palaudut arjen kiireestä"} />
+          <Hyoty teksti={"Stressitasosi laskee"} />
+          <Hyoty teksti={'Keskittymiskykysi palautuu'} />
           <Link to="/faktatieto" className="nappula">Lue lisää hyödyistä</Link>
         </div>
       </div>
