@@ -22,6 +22,12 @@
 @media (max-width: 768px) {
     .herotop-text {
     left: 20px;
+    }
+
+    .herotop-text img {
+    max-width: 200px;
+    height: auto;
+    }
 }
 
-}
+
