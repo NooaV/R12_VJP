@@ -1,14 +1,28 @@
+:root {
+  --side-padding: 75px;  /* Oletusarvo isolle näytölle */
+  --vertical-padding: 20px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --side-padding: 20px; /* Arvo muuttuu automaattisesti mobiilissa */
+    --vertical-padding: 15px;
+  }
+}
+
+
 .opetellaan {
   margin-bottom: 25px;
   background-color: #fff;
 }
+
 
 .opetellaan-pics {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   gap: 15px;
-  padding: 20px 75px;
+   padding: var(--vertical-padding) var(--side-padding);
 }
 
 .left-pics {
@@ -33,7 +47,7 @@
   font-family: 'Gotham Rounded', 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 32px;
-  padding: 20px 75px;
+  padding: 40px var(--side-padding) 20px var(--side-padding);
   padding-top: 40px;
   color: #08060d;
 }

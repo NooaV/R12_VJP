@@ -38,7 +38,7 @@ img {
 }
 
 #root {
-  /* TÄSSÄ SE MUUTOS: Poistetaan 1126px ja reunaviivat */
+  
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -49,4 +49,13 @@ img {
 h1, h2, h3 {
   color: var(--text-h);
   margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --side-padding: 20px;
+    --footer-v-padding: 30px;
+    --font-size-nav: 16px;
+    --font-size-desc: 14px;
+  }
 }

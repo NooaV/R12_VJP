@@ -1,5 +1,18 @@
 /*vähennäkäyttöä-osion tyylittely*/
- 
+:root {
+  --side-padding: 75px;  /* Oletusarvo isolle näytölle */
+  --vertical-padding: 20px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --side-padding: 20px; /* Arvo muuttuu automaattisesti mobiilissa */
+    --vertical-padding: 15px;
+  }
+}
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -17,7 +30,7 @@
   width: 100%;
   background-color: #333333;
 }
-
+/*
 .kontsa {
   display: flex;
   align-items: flex-start;
@@ -26,6 +39,19 @@
   max-width: 1600px;
   padding: 15px 75px;
   gap: 60px;
+} */
+
+.kontsa {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1600px;
+  /* Korvattu: 15px 75px -> var-muuttujilla */
+  padding: var(--vertical-padding) var(--side-padding);
+  gap: 60px;
+  align-items: center;
+  
 }
 
 .vasen {
@@ -175,6 +201,9 @@
   .vasen, .hyotylista {
     width: 100%;
     max-width: none;
+  }
+  .hyotylista{
+    align-items: center;
   }
 }
 
