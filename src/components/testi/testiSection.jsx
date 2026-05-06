@@ -7,9 +7,9 @@ export default function TestiSection() {
       <div className="section-divider"></div>
       <div className="testi-content">
         <div className="testi-text-content">
-          <h2 className="testi-title">Minkälainen doomscrollaaja olet?</h2>
+          <h2 className="testi-title">Testaa suhteesi puhelimen selailuun!</h2>
           <p className="testi-description">
-            Doomscrollaaminen on ajatona scrollaamista puhelimella, varsinkin kun ei ole etsimässä mitään hyödyllistä vaan haluaa pelkästään viettää aikaa.
+            Jokainen meistä selailee puhelintaan turhaan. Testaa siis millä tasolla hallitset omaa puhelimen käyttöäsi.
           </p>
           <Link to="/kysely" className="testi-button">Tee nopea testi!</Link>
         </div>

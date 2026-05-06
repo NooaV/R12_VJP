@@ -12,7 +12,7 @@ const kysymykset = [
     {id: 7, text: "Koetko, että työntekosi heikentyy selailun seurauksena?" },
     {id: 8, text: "Menetätkö usein ajantajun selailun takia?" },
     {id: 9, text: "Tunnetko koskaan saavasi ilmoituksen, vaikket ole saanut?" },
-    {id: 10, text: "Onko sinulta jäänyt julkisissa oikea pysäkki väliin selailun takia?" },
+    {id: 10, text: "Onko sinulta jäänyt oikea pysäkki väliin selailun takia?" },
     {id: 11, text: "Aiotko katsoa ylös?" },
 ];
 
@@ -104,7 +104,7 @@ const Kysely = () => {
         return (
             <div className="kysely-cont">
                 <div className="aloitus-menu">
-                    <h1>Onko puhelimen käyttö sinulle ongelma?</h1>
+                    <h1>Kuinka hyvin hallitset puhelimen käyttöäsi?</h1>
                     <button className="kysymys-nappi" onClick={aloita}>Aloita testi</button>
                 </div>
             </div>
@@ -116,7 +116,7 @@ const Kysely = () => {
             <div className="kysely-cont tulos-cont">
                 <h2>Tulokset</h2>
                 <div className="tulos">
-                    {animoitu} %
+                    Hallitset puhelimen käyttöäsi tasolla {animoitu} %
                 </div>
 
                 <div className="tulos-viesti">

@@ -72,9 +72,11 @@
 .testi-description {
   font-family: 'Gotham Rounded', 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   margin: 0;
+  margin-top: 20px;
+  margin-bottom: 30px;
   line-height: normal;
   
 }
@@ -96,6 +98,7 @@
   white-space: nowrap;
   margin-top: 20px;
   text-decoration: none;
+  width: 322px;
 }
 
 .testi-button:hover {
