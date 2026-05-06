@@ -1,8 +1,10 @@
 .tekemiset-section {
     display: flex;
     flex-direction: column;
-    padding: 0 clamp(16px, 5vw, 80px);
+    padding: 20px 75px;
     width: 100%;
+    border-bottom: 1px solid black;
+
 }
 
 .tekemiset-container {

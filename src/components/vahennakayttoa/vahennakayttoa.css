@@ -24,7 +24,7 @@
   justify-content: flex-start;
   width: 100%;
   max-width: 1600px;
-  padding: 0 75px;
+  padding: 15px 75px;
   gap: 60px;
 }
 
@@ -69,9 +69,8 @@
 }
 
 .kuva {
-  position: absolute;
+
   left: 0;
-  top: -50px;
   width: 825px;
   height: 465px;
   object-fit: cover;

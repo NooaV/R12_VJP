@@ -5,6 +5,7 @@
   height: 100vh;
   overflow: hidden;
   background-color: #000;
+  min-height: 776px;
 }
 
 .hero-foreground {
@@ -51,32 +52,37 @@
 .hero-content {
   position: absolute;
   z-index: 3;
-  top: 50%;
-  right: 10%;
+  top: 35%;
+  right: 5%;
   transform: translateY(-50%);
 }
 
 .hero-title {
   color: white;
   font-family: 'Gotham Rounded', 'Inter', sans-serif;
-  font-size: clamp(5rem, 7vw, 20rem);
+  font-size: clamp(5rem, 6vw, 22rem);
+  font-weight: 800;
+  line-height: 0.95;
+  text-align: right;
+  margin: 0;
+  margin-top: 40px;
+  
+  text-transform: none;
+}
+
+.hero-message {
+  color: white;
+  font-family: 'Gotham Rounded', 'Inter', sans-serif;
+  font-size: clamp(2rem, 4vw, 17rem);
   font-weight: 800;
   line-height: 0.95;
   text-align: right;
   margin: 0;
   text-transform: none;
+  margin-right: 30px;
 }
 
-.hero-logo-container {
-  position: absolute;
-  z-index: 3;
-  bottom: 30px;
-  right: 40px;
-  color: white;
-  font-weight: bold;
-}
-
-@media (max-width: 910px) {
+@media (max-width: 1300px) {
   .hero-content {
     top: 8%;
     right: 50%;
@@ -84,6 +90,10 @@
     width: 100%;
   }
   .hero-title {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .hero-message {
     text-align: center;
   }
   .static-underlay-container {

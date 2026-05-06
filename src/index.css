@@ -16,15 +16,15 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* Tumma teema pidetään myös */
-@media (prefers-color-scheme: dark) {
+/* Tummaa teema ei käytössä. */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
     --text-h: #f3f4f6;
     --bg: #16171d;
     --border: #2e303a;
   }
-}
+} */
 
 body {
   margin: 0;
