@@ -17,8 +17,8 @@ function Header() {
 
                 <Navbar />
 
-                <div className="info">
-                    <span>i{/*tähän info logo*/}</span>
+                <div className="info_icon">
+                    <img src="/images/info_icon.png" alt="info icon" className="info-icon"/>
                 </div>
             </div>
 

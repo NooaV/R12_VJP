@@ -27,6 +27,12 @@
     display: flex;
 }
 
+.info_icon{
+    height: 34px;
+    width: 34px;
+
+}
+
 .nav {
     display: flex;
     gap: clamp(30px, 4vw, 200px);

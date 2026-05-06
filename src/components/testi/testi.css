@@ -37,7 +37,8 @@
 
   .testi-content {
     grid-template-columns: 1fr; /* Muutetaan 2 saraketta yhdeksi */
-    height: auto; /* Varmistetaan, että korkeus joustaa */
+    height: auto;
+    align-items: center;
   }
 
   .testi-title {
@@ -49,8 +50,11 @@
   }
   
   .testi-text-content {
-    align-items: center; /* Valinnainen: keskittää sisällön mobiilissa */
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Keskittää sisällön vaakasuunnassa */
+    text-align: center;  /* Keskittää tekstirivit laatikon sisällä */
+    width: 100%;        /* Varmistaa, että kontti vie koko tilan */
   }
 
   .testi-button{
@@ -101,8 +105,16 @@
   margin-top: 20px;
   text-decoration: none;
   width: 322px;
+  transition: all 0.3s ease;
+  
 }
 
 .testi-button:hover {
-  background-color: #e0e3e5;
+  background-color: #ebf1f5;
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 12px #111212;
+}
+
+.testi-button:active {
+  transform: translateY(0); 
 }
