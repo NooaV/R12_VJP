@@ -94,14 +94,21 @@
   position: relative;
 }
 
-.kuva {
-
-  left: 0;
+/* .kuva {
   width: 825px;
   height: 465px;
   object-fit: cover;
-  max-width: none;
   pointer-events: none;
+  object-position: left;
+} */
+
+.kuva {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 60% center;
+  pointer-events: none;
+  display: block;
 }
 
 .hyotylista {
