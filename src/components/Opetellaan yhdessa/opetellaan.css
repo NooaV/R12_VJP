@@ -1,3 +1,52 @@
+.opetellaan {
+  margin-bottom: 25px;
+  background-color: #fff;
+}
+
 .opetellaan-pics {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 15px;
+  padding: 20px 75px;
+}
+
+.left-pics {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pic {
+  border-radius: 10px;
+}
+
+.right-pic {
+  border-radius: 10px;
+}
+
+.pic2 {
+  border-radius: 10px;
+}
+
+.opetellaan-title {
+  font-family: 'Gotham Rounded', 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  padding: 20px 75px;
+  padding-top: 40px;
+  color: #08060d;
+}
+
+@media (min-width: 768px) {
+  .opetellaan-pics {
+    flex-direction: row;
+  }
+  .left-pics {
+    flex: 4;
+  }
     
+  .right-pic {
+    flex: 7;
+  }
 }
