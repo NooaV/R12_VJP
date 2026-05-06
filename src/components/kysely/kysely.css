@@ -1,3 +1,19 @@
+:root {
+  --h1-size: 2.5rem;
+  --nappi-font: 2.3rem;
+  --nappi-padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --h1-size: 2rem;
+    --nappi-font: 1.9rem;
+    --nappi-padding: 1.5rem;
+  }
+}
+
+
+
 .kysely-cont {
     max-width: 600px;
     min-height: 565px;
@@ -28,13 +44,17 @@
     transition: width 0.3s ease;
 }
 
-.kysymys {
-    font-size: 2.5rem;
+h1, .kysymys {
+    font-size: var(--h1-size);
     font-weight: 600;
     text-align: center;
     margin-bottom: 3rem;
     line-height: 1.2;
-    min-height: 162px;
+    min-height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .vaihtoehdot {
@@ -49,10 +69,11 @@
     background-color: #E2EBF1;
     border: none;
     border-radius: 12px;
-    padding: 2rem;
-    font-size: 2rem;
+    padding: var(--nappi-padding);
+    font-size: var(--nappi-font);
     font-weight: 600;
     font-family: 'Gotham Rounded', 'Montserrat', sans-serif;
+    width: 100%;
     color: #333333;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -122,6 +143,7 @@
     min-height: 500px;
 }
 
+/*
 h1 {
     font-size: 2.5rem;
     font-weight: 600;
@@ -129,3 +151,5 @@ h1 {
     margin-bottom: 3rem;
     line-height: 1.2;
 }
+    */
+

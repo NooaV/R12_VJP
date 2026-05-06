@@ -158,7 +158,7 @@
 
 .hyotykortti:hover {
   transform: translateY(-2px); 
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 0 4px 12px #d2dae0;
   
 }
@@ -167,6 +167,7 @@
 .nappula:hover {
   background-color: #005fa3;
   transform: translateY(-2px); 
+  transform: scale(1.05);
   box-shadow: 0 4px 12px #005d9f;
 }
 
@@ -222,5 +223,12 @@
   }
   .kuvaus, .hyotyteksti {
     font-size: 20px;
+  }
+}
+
+@media (hover: hover) {
+  .hyotykortti:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 12px #d2dae0;
   }
 }
