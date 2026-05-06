@@ -228,7 +228,7 @@
 
 @media (hover: hover) {
   .hyotykortti:hover {
-    transform: scale(1.1); /* Poistettu moninkertainen transform-määrittely */
+    transform: scale(1.1); 
     box-shadow: 0 4px 12px #d2dae0;
   }
 }
