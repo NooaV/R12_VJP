@@ -15,7 +15,7 @@ const Hero = () => {
       ></div>
 
       <div className="hero-content">
-        <h2 className="hero-message">Puhelin on vain hälyä</h2>
+        <h2 className="hero-message">Puhelin alas;</h2>
         <h1 className="hero-title">Katse ylös</h1>
       </div>
 

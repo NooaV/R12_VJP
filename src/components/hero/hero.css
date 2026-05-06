@@ -52,7 +52,7 @@
 .hero-content {
   position: absolute;
   z-index: 3;
-  top: 17%;
+  top: 35%;
   right: 5%;
   transform: translateY(-50%);
 }
@@ -82,7 +82,7 @@
   margin-right: 30px;
 }
 
-@media (max-width: 910px) {
+@media (max-width: 1300px) {
   .hero-content {
     top: 8%;
     right: 50%;
