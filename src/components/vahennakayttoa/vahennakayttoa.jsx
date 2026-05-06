@@ -15,7 +15,7 @@ export default function Vahennakayttoa() {
           <p className="kuvaus">
             <span>Kampanja </span>
             <span className="kursiivi">Katse ylös </span>
-            <span>kehottaa julkisen liikenteen matkustajia ottamaan enemmän irti arjesta. Vähentämällä ruutuaikaa, jää aikaa omille ajatuksille. Ajoita esimerkiksi päivittäinen työmatka omaksi ruuduttomaksi ajaksi. </span>
+            <span>kehottaa olemaan läsnä arjessa edes metromatkan ajan. Vähentämällä ruutuaikaa jää aikaa omille ajatuksille. Ajoita esimerkiksi päivittäinen työmatka omaksi ruuduttomaksi ajaksesesi. </span>
           </p>
           <div className="kuvaboksi">
             <img src="images/kuva1.jpeg" alt="kuvituskuva" className="kuva" />
