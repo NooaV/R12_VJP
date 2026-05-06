@@ -11,6 +11,7 @@ import FaktaTieto from "./pages/faktaTietoPage";
 import Quiz from "./pages/kyselyPage";
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh"}}>
       <Header />
       <main style ={{flex: 1}}>
+        <ScrollToTop />
         <Routes>
           <Route path ="/" element={<Home />} />
           <Route path ="/faktatieto" element={<FaktaTieto/>} />
