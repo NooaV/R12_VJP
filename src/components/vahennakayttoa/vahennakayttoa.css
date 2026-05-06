@@ -131,12 +131,9 @@
 }
 
 .hyotykortti:hover {
-  background-color: #d2dae0;
   transform: translateY(-2px); 
   transform: scale(1.1);
-  box-shadow: 0 4px 12px #95999c;
-
-
+  box-shadow: 0 4px 12px #d2dae0;
   
 }
 
