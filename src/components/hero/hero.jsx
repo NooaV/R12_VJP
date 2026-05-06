@@ -15,14 +15,10 @@ const Hero = () => {
       ></div>
 
       <div className="hero-content">
-        <h1 className="hero-title">
-          Katse<br />ylös
-        </h1>
+        <h2 className="hero-message">Puhelin alas;</h2>
+        <h1 className="hero-title">Katse ylös</h1>
       </div>
 
-      <div className="hero-logo-container">
-        <div className="logo-placeholder"></div>
-      </div>
     </section>
   );
 };

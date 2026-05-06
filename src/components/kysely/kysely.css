@@ -73,6 +73,7 @@
 .tulos-cont {
     font-size: 2rem;
     margin-bottom: 2rem;
+    min-height: 565px;
 }
 
 .tulos {
