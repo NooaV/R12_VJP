@@ -22,7 +22,7 @@
   flex-direction: column;
   border-radius: 10px;
   gap: 15px;
-   padding: var(--vertical-padding) var(--side-padding);
+  padding: var(--vertical-padding) var(--side-padding);
 }
 
 .left-pics {
@@ -52,15 +52,33 @@
   color: #08060d;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .opetellaan-pics {
+    display: flex;
     flex-direction: row;
   }
   .left-pics {
+    display: flex;
     flex: 4;
   }
     
   .right-pic {
+    display: flex;
+    flex-direction: column;
     flex: 7;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .opetellaan-title {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .opetellaan-title {
+    font-size: 44px;
   }
 }

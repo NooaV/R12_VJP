@@ -11,11 +11,11 @@ export default function OpetellaanYhdessa() {
         >Opetellaan yhdessä pitämään taukoa: katsotaan ylös!</h2>
       <div className= "opetellaan-pics">
         <div className= "left-pics">
-          <img className = "pic" src={kuva1} alt="kuvituskva2" />
-          <img className = "pic" src={kuva2} alt="kuvituskuva3" />
+          <img className = "pic" src={kuva1} alt="Ratikkapysäkki, jolla on kampanjan mainos" />
+          <img className = "pic" src={kuva2} alt="Metrotunneli, jonka mainostaulussa on kampanjan mainos" />
         </div>
         <div className = "right-pic">
-          <img className= "pic2"src={kuva3} alt="kuvituskuva1" />
+          <img className= "pic2"src={kuva3} alt="Katse ylös, HSL, vihreällä taustalla" />
         </div>
         
       </div>
