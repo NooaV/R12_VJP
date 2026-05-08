@@ -1,6 +1,7 @@
 # R12_VJP
 "HSL Katse ylös" -kampanjan verkkosivut
 
+Sovimme ryhmän kanssa varhaisessa vaiheessa, kuka tekee minkäkin osion, ja että mahdollisten aikatauluhaasteiden sattuessa olemme yhteydessä toisiimme. Varsinaista projektipäällikköä emme sopineet, mutta omien osioidemme lisäksi Nooa huolehti projektin Githubin ja Vercelin koordinoinnista, Philip kuvasisältöjen tuottamisesta, Elias yhteisten tapaamisten sopimisesta ja tiedotuksesta, Eemil monimutkaisten toiminnallisuuksien toteuttamisesta ja ideoinnista ja Aino teknisestä- sekä sisällön hienosäädöstä. Projektin suunnitelma ja pohja oli valmiina hyvissä ajoin. Työskentelimme erityisesti parin viimeisen viikon ajan omien aikataulujemme puitteissa. Kiirettä ei tullut, mutta jonkin verran työtä jäi viimeisille päiville.
 
 Aino Koivukangas
-Tein Figma-suunnitelman mobiiliversion (n. 6h). Toteutin sivuille mobiilinavigaation (n. 8h) ja "Opetellaan yhdessä pitämään taukoa" -osion (n. 6h). Osallistuin yhteiseen suunnitteluun ja hienosäätöön.
+Tein Figma-suunnitelman mobiiliversion (n. 6h). Toteutin sivuille mobiilinavigaation (n. 8h) ja "Opetellaan yhdessä pitämään taukoa" -osion (n. 6h). Osallistuin yhteiseen suunnitteluun ja hienosäätöön (3h).
