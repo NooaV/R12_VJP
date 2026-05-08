@@ -1,4 +1,3 @@
-//Ainon osio
 import kuva1 from "/public/images/pysäkki.jpg";
 import kuva3 from "/public/images/Kate_ylös.jpg";
 import kuva2 from "/public/images/metropysäkki.jpg";

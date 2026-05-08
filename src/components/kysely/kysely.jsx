@@ -147,7 +147,7 @@ const Kysely = () => {
             {/*Kysymys*/}
             <h1 className="kysymys">{kysymykset[currentIndex].text}</h1>
 
-            {/*Vastaus napit*/}
+            {/*Vastausnapit*/}
             <div className="vaihtoehdot">
                 <button className="kysymys-nappi" onClick={() => handleVastaus('y')}>
                     Kyllä

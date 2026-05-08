@@ -1,7 +1,7 @@
 /* index.css */
 
 :root {
-  /* Väripaletti ja asetukset (Pidetään nämä!) */
+  /* Väripaletti ja asetukset */
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #ffffff;
@@ -16,7 +16,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* Tummaa teema ei käytössä. */
+/* Tumma teema ei käytössä. */
 /* @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
