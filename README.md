@@ -5,3 +5,6 @@ Sovimme ryhmän kanssa varhaisessa vaiheessa, kuka tekee minkäkin osion, ja ett
 
 Aino Koivukangas
 Tein Figma-suunnitelman mobiiliversion (n. 6h). Toteutin sivuille mobiilinavigaation (n. 8h) ja "Opetellaan yhdessä pitämään taukoa" -osion (n. 6h). Osallistuin yhteiseen suunnitteluun ja hienosäätöön (3h).
+
+Elias Lumiaho
+Toteutin sivulle vähentämisen hyödyt -osion (6-7 h), mutta oma työskentelyni painottui VDM-kurssin puolelle ja sisällön suunnitteluun eikä niinkään koodaamiseen. Jaoimme sivun selkeisiin osioihin niin, että kaikki sai omansa ja oli kiva tehdä kuitenkin koodia pieni palanen. Siitä huomasi, että näköjään osaankin jotain (ainakin ottamalla mallia muiden osioista) ja ainaki olin ylpee ku ymmärsin react routerin ja tein hianosti linkin omasta osiostani toiseen osioon. Nyt oon ines skenes (hymynaama)
