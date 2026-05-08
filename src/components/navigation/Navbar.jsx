@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 
@@ -15,11 +15,35 @@ function Navbar() {
     //Mobiilinavigaation hallinta
     const [isOpen, setOpen] = useState(false);
 
-    const menuToggle = () => {setOpen(!isOpen);
+    const [animReady, setAnim] = useState(false);
+
+    const menuToggle = () => {
+        if (!animReady) {
+            setAnim(true);
+        }
+        setOpen(!isOpen);
+
     }
 
     const menuClose = () => {setOpen(false);
     }
+
+    //Kun ikkunan pienenee, mobiilinavigaation transitio ei saa mennä päälle
+    useEffect(() => {
+        const newSize = () => {
+            if (window.innerWidth <= 440) {
+                setOpen(false);
+                setAnim(false);
+            }
+        }
+    
+
+    window.addEventListener("resize", newSize);
+
+    return () => {
+        window.removeEventListener("resize", newSize);
+    }
+    }, [])
 
 
     return (
@@ -31,7 +55,7 @@ function Navbar() {
                 <div className="bar"></div>
             </div>
         
-            <div className={isOpen ? "nav-items open" : "nav-items"}>
+            <div className={`nav-items ${isOpen ? "open" : ""} ${animReady ? "anim" : ""}`}>
                 <ul className ="nav-list">
                     {!isHomePage && (
                         <li><Link to="/" className="nav-home-link" onClick={menuClose}>Etusivulle</Link></li>
