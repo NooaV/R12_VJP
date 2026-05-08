@@ -87,7 +87,7 @@
 
 /*Mobiilinavigaatio*/
 
-@media (max-width: 440px) {
+@media (max-width: 650px) {
     .info-icon {
         display: none;
     }
@@ -141,7 +141,7 @@
     }
 
     .nav-items.anim {
-        transition: transform 0.4s ease, visibility 0.4s ease;
+        transition: transform 0.4s ease;
     }
 
     .nav-items.open {

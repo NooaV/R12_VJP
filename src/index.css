@@ -4,7 +4,7 @@
   /* Väripaletti ja asetukset (Pidetään nämä!) */
   --text: #6b6375;
   --text-h: #08060d;
-  --bg: #fff;
+  --bg: #ffffff;
   --border: #e5e4e7;
   --accent: #aa3bff;
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -45,7 +45,7 @@ img {
   flex-direction: column;
 }
 
-/* Tehdään otsikoista oletuksena siistejä */
+/* Otsikot oletuksena siistejä */
 h1, h2, h3 {
   color: var(--text-h);
   margin-top: 0;
