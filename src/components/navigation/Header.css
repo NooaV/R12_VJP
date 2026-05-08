@@ -141,7 +141,7 @@
     }
 
     .nav-items.anim {
-        transition: transform 0.4s ease;
+        transition: transform 0.4s ease, visibility 0.4s ease;
     }
 
     .nav-items.open {
