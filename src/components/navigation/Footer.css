@@ -27,14 +27,14 @@
   gap: 26px;
   align-items: flex-start;
   width: 99px;
-  padding: 0, 20px;
+  padding: 0 20px;
 }
 
 .footer-link {
   font-family: 'Gotham Rounded', 'Inter', sans-serif;
   font-weight: 500;
   font-size: 18px;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -46,9 +46,9 @@
   font-family: 'Gotham Rounded', 'Inter', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: white;
+  color: #ffffff;
   width: 664px;
-  padding: 0, 20px;
+  padding: 0 20px;
   margin: 0 20px;
   line-height: normal;
 }
@@ -76,7 +76,7 @@
 
 .footer-nav a{
     font-family: 'Gotham Rounded', sans-serif;
-    color: white;
+    color: #ffffff;
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
