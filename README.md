@@ -2,6 +2,8 @@
 
 "HSL Katse ylös" -kampanjan verkkosivut
 
+https://katseylos.vercel.app/
+
 Sovimme ryhmän kanssa varhaisessa vaiheessa, kuka tekee minkäkin osion, ja että mahdollisten aikatauluhaasteiden sattuessa olemme yhteydessä toisiimme. Varsinaista projektipäällikköä emme sopineet, mutta omien osioidemme lisäksi Nooa huolehti projektin Githubin ja Vercelin koordinoinnista, Philip kuvasisältöjen tuottamisesta, Elias yhteisten tapaamisten sopimisesta ja tiedotuksesta, Eemil monimutkaisten toiminnallisuuksien toteuttamisesta ja ideoinnista ja Aino teknisestä- sekä sisällön hienosäädöstä.
 
 Projektin suunnitelma ja pohja oli valmiina hyvissä ajoin. Työskentelimme erityisesti parin viimeisen viikon ajan omien aikataulujemme puitteissa. Kiirettä ei tullut, mutta jonkin verran työtä jäi viimeisille päiville.
@@ -21,7 +23,7 @@ Aino Koivukangas
 Tein Figma-suunnitelman mobiiliversion (n. 6h). Toteutin sivuille mobiilinavigaation (n. 8h) ja "Opetellaan yhdessä pitämään taukoa" -osion (n. 6h). Osallistuin yhteiseen suunnitteluun ja hienosäätöön (3h). Tehtävän myötä opin vihdoin Gitin, pushaamisen ja pullaamisen tärkeyden verkkosivujen teossa sekä React-projektin rakenteen. Huomasin, että osaan jo monenlaista: esimerkiksi käyttää Figmaa, taiteilla flexboxilla, etsiä koodiin malliesimerkkejä ja luoda toiminnallisuuksia Reactiin. Oli hienoa päättää kurssi näin konkreettiseen projektiin. Tuntui, että saimme aikaan jotain hyödyllistä, ja työ ryhmässä oli mielekkäämpää kuin aimmat yksin tehdyt tehtävät.
 
 Elias Lumiaho
-Toteutin sivulle vähentämisen hyödyt -osion (6-7 h), mutta oma työskentelyni painottui VDM-kurssin puolelle ja sisällön suunnitteluun eikä niinkään koodaamiseen. Jaoimme sivun selkeisiin osioihin niin, että kaikki sai omansa ja oli kiva tehdä kuitenkin koodia pieni palanen. Siitä huomasi, että näköjään osaankin jotain (ainakin ottamalla mallia muiden osioista) ja ainaki olin ylpee ku ymmärsin react routerin ja tein hianosti linkin omasta osiostani toiseen osioon. Nyt oon ines skenes (hymynaama)
+Toteutin sivulle vähentämisen hyödyt -osion (6-7 h), mutta oma työskentelyni painottui VDM-kurssin puolelle ja yhteiseen sisällön suunnitteluun (n. 5 h) eikä niinkään koodaamiseen. Jaoimme sivun selkeisiin osioihin niin, että kaikki sai omansa ja oli kiva tehdä kuitenkin koodia pieni palanen. Siitä huomasi, että näköjään osaankin jotain (ainakin ottamalla mallia muiden osioista) ja ainaki olin ylpee ku ymmärsin react routerin ja tein hianosti linkin omasta osiostani toiseen osioon. Nyt oon ines skenes (hymynaama)
 
 Philip Hermunen
 Loin Figmaan kokonaan moodboardin, styleguiden sekä alkuperäisen desktop designin sivulle, kokonaan tehty autolayoutilla sekä jaettu valmiiksi sectioneihin, jotka oli helppo myöhemmin jakaa kaikille totetutettavaksi. Olin mukana suunnittelemassa sivuston koodin rakennetta. Tekemiset section sekä hero ovat minun tekemiä. Kaikki kuvat ja grafiikat, lukuunottamatta sivun viimeistä katse ylös kehotusta, ovat minun ottamia ja editoimia, sekä kampanjavideo on minun tekemä. Arvioitu tuntimäärä ehkä 20h vaikea sanoa.
