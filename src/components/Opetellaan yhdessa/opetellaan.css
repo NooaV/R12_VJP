@@ -33,14 +33,22 @@
 
 .pic {
   border-radius: 10px;
+  width: 100%;
 }
 
 .right-pic {
+  display: flex;
+  align-items: center;
   border-radius: 10px;
+  overflow: hidden;
+  height: 100%; /* tai jokin kiinteä arvo esim. 500px */
 }
 
 .pic2 {
   border-radius: 10px;
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .opetellaan-title {
