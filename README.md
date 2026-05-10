@@ -27,3 +27,6 @@ Tämän lisäksi jos ajattelee HSL:llän designia ja miksi se on sen näköinen 
 
 Nooa Virtala
 Loin github repon ryhmälle, Alustin react-projektin sinne. Tein sivuston Headerin ja Footerin. (6h) Hoidin sivuston monisivuiseksi React routerilla (2h), ja laitoin sivuston nettiin Vercelin kautta. (0,5h) Tein sivustolla paljon hienosäätöä ja bug fixaamista, että kaikki näyttää hyvältä, sekä sovitin sivuston toimimaan erikokoisilla näytöillä, mobiilissa, tabletilla ja tietokoneella. (6h). Kompressoin ja lisäsin myös kampanjavideon nettisivulle. (1h). Tuntuu että nyt on oikein hyvä käsitys reactilla nettisivujen tekemisestä, ja arkkitehtuuri on selkeää.
+
+Eemil Lounila
+Loin sivun alaosassa löytyvän lumisadepuhelin kuvan (3-4h), sivustolta löytyvän testin (6-8h) sekä muuta hienosäätöä ympäri sivua (1-2h). Myls omien osioiden responsiivisuus (2h). Figmassa suunnittelu aikaa (2h). Kun oli tämmöinen isompi konkreettinen asia mitä tekee, niin tuntui että react avautui melkein kokonaan uudella tavalla, jota aikaisemmista kierroksista en saanyt irti.
