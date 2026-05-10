@@ -7,7 +7,7 @@ function TekemisetKortti( {title, description, image} ) {
         <div className="tekemiset-kortti">
             {image && (
                 <div className="tekemiset-kuva-boxi">
-                    <img src={image} alt="" className="tekemiset-kuva" />
+                    <img src={image} alt={description} className="tekemiset-kuva" />
                 </div>
             )}
             <h3 className="tekemiset-title">{title}</h3>
