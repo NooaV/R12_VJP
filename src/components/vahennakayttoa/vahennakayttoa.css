@@ -1,17 +1,16 @@
 /*vähennäkäyttöä-osion tyylittely*/
+
 :root {
-  --side-padding: 75px;  /* Oletusarvo isolle näytölle */
+  --side-padding: 75px;
   --vertical-padding: 20px;
 }
 
 @media (max-width: 768px) {
   :root {
-    --side-padding: 20px; /* Arvo muuttuu automaattisesti mobiilissa */
+    --side-padding: 20px;
     --vertical-padding: 15px;
   }
 }
-
-
 
 * {
   box-sizing: border-box;
@@ -30,24 +29,13 @@
   width: 100%;
   background-color: #333333;
 }
-/*
-.kontsa {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100%;
-  max-width: 1600px;
-  padding: 15px 75px;
-  gap: 60px;
-} */
 
 .kontsa {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-  max-width: 1600px;
-  /* Korvattu: 15px 75px -> var-muuttujilla */
+  max-width: 2000px;
   padding: var(--vertical-padding) var(--side-padding);
   gap: 60px;
   align-items: center;
@@ -93,14 +81,6 @@
   width: 100%;
   position: relative;
 }
-
-/* .kuva {
-  width: 825px;
-  height: 465px;
-  object-fit: cover;
-  pointer-events: none;
-  object-position: left;
-} */
 
 .kuva {
   width: 100%;
@@ -215,21 +195,40 @@
   }
 }
 
+@media (min-width: 1000px) {
+  .otsikko {
+    font-size: 34px;
+  }
+  .kuvaus, .hyotyteksti {
+    font-size: 26px;
+  }
+}
+
+
 @media (min-width: 1400px) {
   .otsikko {
     font-size: 38px;
   }
-  .kuvaus, .hyotyteksti {
-    font-size: 18px;
+  .kuvaus, .hyotyteksti, .nappula{
+    font-size: 28px;
   }
 }
 
 @media (min-width: 1800px) {
   .otsikko {
-    font-size: 44px;
+    font-size: 48px;
   }
-  .kuvaus, .hyotyteksti {
-    font-size: 20px;
+  .kuvaus, .hyotyteksti, .nappula{
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 2800px) {
+  .otsikko {
+    font-size: 58px;
+  }
+  .kuvaus, .hyotyteksti, .nappula{
+    font-size: 48px;
   }
 }
 
