@@ -18,6 +18,7 @@ export default function OpetellaanYhdessa() {
           <video
             className="pic2"
             src={kampanjavideo2}
+            alt="kampanjavideo kehottaa nostamaan katseen ruudulta"
             autoPlay
             loop
             muted

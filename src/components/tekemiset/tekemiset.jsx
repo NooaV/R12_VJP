@@ -34,22 +34,22 @@ export default function Tekemiset() {
                         <TekemisetKortti
                             title="Bingo"
                             description="Laske matkan aikana esineitä joita näet ikkunasta. Voit täyttää nämä bingopeliimme tai pitää mielessä."
-                            image = "images/maisema.jpeg"
+                            image = "images/maisema.jpeg" alt="maisema raitiovaunun ikkunasta"
                         />
                         <TekemisetKortti
                             title="Träkkeri"
                             description="Näytä muille miten olet matkustanut ilman ruutuaikaa, ja jaa tämä suoritus someen helposti."
-                            image = "images/puhelin.jpeg"
+                            image = "images/puhelin.jpeg" alt="puhelinta käyttävät kädet"
                         />
                         <TekemisetKortti
                             title="Podi"
                             description="Podcast ruutuajan vähentämisen hyödyistä, innostu ja näytä itse esimerkkiä seuraavalla reissulla."
-                            image = "images/podi.jpg"
+                            image = "images/podi.jpg" alt="metromatkustaja kuulokkeet päässään"
                         />
                         <TekemisetKortti
                             title="Meditaatio"
                             description="Ota kiireisestä arjesta toisenlainen hyödyllinen aika itsellesi meditaation kanssa. Lue lisää miten."
-                            image = "images/meditaatio.jpeg"
+                            image = "images/meditaatio.jpeg" alt="metromatkustaja, joka katsoo ulos ikkunasta"
                         />
                     </div>
                 </div>

@@ -18,7 +18,7 @@ export default function Vahennakayttoa() {
             <span>kehottaa olemaan läsnä arjessa edes metromatkan ajan. Vähentämällä ruutuaikaa jää aikaa omille ajatuksille. Ajoita esimerkiksi päivittäinen työmatka omaksi ruuduttomaksi ajaksesesi. </span>
           </p>
           <div className="kuvaboksi">
-            <img src="images/kuva1.jpeg" alt="kuvituskuva" className="kuva" />
+            <img src="images/kuva1.jpeg" alt="raitiovaunun matkustamo" className="kuva" />
           </div>
         </div>
         <div className="hyotylista">
