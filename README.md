@@ -1,8 +1,10 @@
 # R12_VJP
 
-"HSL Katse ylös" -kampanjan verkkosivut
-
+"HSL Katse ylös" -kampanjan verkkosivut: 
 https://katseylos.vercel.app/
+
+figma: 
+https://www.figma.com/design/APSSHaCKIGtdX6JXBjg3yW/VJP-Verkkosivu-lopputeht%C3%A4v%C3%A4?node-id=0-1&t=D2gymbYbiw2Fwqb4-1
 
 Sovimme ryhmän kanssa varhaisessa vaiheessa, kuka tekee minkäkin osion, ja että mahdollisten aikatauluhaasteiden sattuessa olemme yhteydessä toisiimme. Varsinaista projektipäällikköä emme sopineet, mutta omien osioidemme lisäksi Nooa huolehti projektin Githubin ja Vercelin koordinoinnista, Philip kuvasisältöjen tuottamisesta, Elias yhteisten tapaamisten sopimisesta ja tiedotuksesta, Eemil monimutkaisten toiminnallisuuksien toteuttamisesta ja ideoinnista ja Aino teknisestä- sekä sisällön hienosäädöstä.
 
