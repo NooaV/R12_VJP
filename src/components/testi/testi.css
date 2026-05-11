@@ -27,7 +27,7 @@
 
 .testi-content {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 31px;
   min-height: 161px; 
   width: 100%;
@@ -37,6 +37,25 @@
 .testi-content img {
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: 1920px) {
+.testi-section {
+  align-items: center;
+}
+
+  .testi-content {
+    height: auto;
+    align-items: center;
+  }
+  
+  .testi-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 
